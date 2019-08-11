@@ -73,7 +73,7 @@ ggAcf(data.ts) + theme_stata()
 
 
 # Alternatively we could do an Ljung-Box test on the overall randomness.
-Box.test(data.ts , lag = 24 , fitdf = 0 , type = "Ljung-Box")
+Box.test(data.ts , lag = 24 ,type = "Ljung-Box")
   # P too low, null must go
   # P value < 0.05 suggests changes are significantly different from white noise (randomness)
 
@@ -117,6 +117,15 @@ checkresiduals(fc.Holt)
   # Ljung-Box test pvalue > 0.05, residuals white noise
   # Model captured most of the signal
 
+# Let's replicate Microsoft PowerBI  ----------------------------------------------------------
+  # https://community.powerbi.com/t5/Desktop/Forecasting-in-Power-BI-The-Theory/td-p/365736
+  # https://powerbi.microsoft.com/en-us/blog/describing-the-forecasting-models-in-power-view/
+
+m.etsAAN <- ets(data.ts,
+                model = "AAN")
+fc.etsANN <- forecast(m.etsAAN , h = 12)
+autoplot(fc.etsANN)
+checkresiduals(fc.etsANN)
 
 
 # Let's give ets() a try to find a good model ----------------------------------------------------------
@@ -136,7 +145,7 @@ checkresiduals(fc.ets)
 accuracy(fc.naive)
 accuracy(fc.Holt)
 accuracy(fc.ets)
-
+accuracy(fc.etsANN)
 
 # Let's give ARIMA a try  ----------------------------------------------------------
 
