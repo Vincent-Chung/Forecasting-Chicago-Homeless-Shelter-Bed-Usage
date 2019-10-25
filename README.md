@@ -8,6 +8,8 @@ This script requires 3 packages:
 * [Tidyverse](https://www.tidyverse.org/packages/) - Awesome data bending/mashing tools
 * [RSocrata](https://www.rdocumentation.org/packages/RSocrata/versions/1.4) - Used for pulling data from Socrata open data portals. Government agencies commonly use this system.
 * [forecast](https://github.com/robjhyndman/forecast) - Developed by Rob Hyndman, this is a time series analysis package that is a must-have in anyone's toolbox.
+* [urca](https://www.rdocumentation.org/packages/urca/versions/1.3-0) - Used for unit root testing.
+* [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/) - One of my favorite themes package for ggplot.
 
 ### Data
 
