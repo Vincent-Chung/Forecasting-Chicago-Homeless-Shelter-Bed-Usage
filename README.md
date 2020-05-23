@@ -1,5 +1,5 @@
 # Forecasting-Chicago-Homeless-Shelter-Bed-Usage
-Procedural time series recipe that walks through time series-based, exploratory data analysis and assess the performance of Microsoft's automated time series solution vs Hyndman's methods. Chicago homeless shelter bed data was used because it is more meaningful than most alternatives, and was intended to raise awareness of an often forgotten population.
+Functional time series recipe that walks through time series-based, exploratory data analysis and assess the performance of Microsoft's automated time series solution vs Hyndman's methods. Chicago homeless shelter bed data was used because it is more meaningful than most alternatives, and was intended to raise awareness of an often forgotten population.
 
 ### Packages
 
