@@ -3,7 +3,7 @@ Functional time series recipe that walks through time series-based, exploratory 
 
 ### Packages
 
-This script requires 3 packages:
+This script requires 5 packages:
 
 * [Tidyverse](https://www.tidyverse.org/packages/) - Awesome data bending/mashing tools
 * [RSocrata](https://www.rdocumentation.org/packages/RSocrata/versions/1.4) - Used for pulling data from Socrata open data portals. Government agencies commonly use this system.
